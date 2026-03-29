@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bla gjennom alle 7 Rainy Days regnjakker for herre og dame. Hardskall, fleece og lett vindjakke for friluftsliv.">
+  <title>Alle regnjakker | Rainy Days</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="lang-bar" role="navigation" aria-label="Velg spraak">
+  <div class="lang-bar-inner">
+    <a href="index.html" class="lang-btn lang-btn-active" hreflang="no" aria-label="Norsk"><span aria-hidden="true">&#127475;&#127476;</span> Norsk</a>
+    <a href="coming-soon.html" class="lang-btn" hreflang="en" aria-label="English"><span aria-hidden="true">&#127468;&#127463;</span> English</a>
+  </div>
+</div>
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Rainy Days - til forsiden">
+      <img src="images/logo.png" alt="Rainy Days" width="160" height="46">
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Aapne navigasjon">
+      <span></span><span></span><span></span>
+    </label>
+    <nav id="main-nav" aria-label="Hovedmeny">
+      <ul class="nav-list" role="list">
+        <li><a href="index.html" class="nav-link">Hjem</a></li>
+<li><a href="products.html" class="nav-link nav-link-active" aria-current="page">Jakker</a></li>
+<li><a href="coming-soon.html" class="nav-link">Herre</a></li>
+<li><a href="coming-soon.html" class="nav-link">Dame</a></li>
+<li><a href="coming-soon.html" class="nav-link">Salg</a></li>
+
+      </ul>
+    </nav>
+    <a href="cart.html" class="cart-btn" aria-label="Handlekurv">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <span class="cart-btn-text">Handlekurv</span>
+    </a>
+  </div>
+</header>
+<main id="main-content">
+  <div class="page-hdr">
+    <div class="container">
+      <div class="page-hdr-inner">
+        <div><span class="sec-pre sec-pre-light">Rainy Days Kolleksjon</span><h1>Alle jakker</h1></div>
+        <span class="page-hdr-count">7 modeller</span>
+      </div>
+    </div>
+  </div>
+  <div class="filter-bar" role="search" aria-label="Filtrer jakker">
+    <div class="container filter-bar-inner">
+      <span class="filter-lbl">Filter:</span>
+      <a href="products.html" class="filter-btn filter-btn-active" aria-pressed="true">Alle</a>
+      <a href="coming-soon.html" class="filter-btn">Herre</a>
+      <a href="coming-soon.html" class="filter-btn">Dame</a>
+      <a href="coming-soon.html" class="filter-btn">Hardskall</a>
+      <a href="coming-soon.html" class="filter-btn">Fleece</a>
+      <a href="coming-soon.html" class="filter-btn">Salg</a>
+    </div>
+  </div>
+  <section class="section" aria-labelledby="all-h">
+    <div class="container">
+      <h2 id="all-h" class="sr-only">Alle regnjakker</h2>
+      <ul class="pgrid pgrid-all" role="list"><li>
+  <article class="pcard">
+    <a href="product-detail.html" aria-label="Coastal Guardian - 1 999 kr">
+      <div class="pcard-img-wrap">
+        <img src="images/jacket1.jpg" alt="Coastal Guardian regnjakke" class="pcard-img" width="600" height="600" loading="lazy">
+        <span class="badge badge-blue">Bestselger</span>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-rating" aria-label="5 av 5 stjerner, 142 anmeldelser">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="review-count">(142)</span>
+        </div>
+        <h3 class="pcard-name">Coastal Guardian</h3>
+        <p class="pcard-sub">Herrejakke &#8212; Tung vanntett &#8212; Oransje/Gr&#229;</p>
+        <div class="pcard-foot">
+          <span class="price">1 999 kr</span>
+        </div>
+      </div>
+    </a>
+  </article>
+</li>
+<li>
+  <article class="pcard">
+    <a href="product-detail.html" aria-label="Velocity Wind - 1 399 kr">
+      <div class="pcard-img-wrap">
+        <img src="images/jacket2.jpg" alt="Velocity Wind regnjakke" class="pcard-img" width="600" height="600" loading="lazy">
+        <span class="badge badge-green">Ny</span>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-rating" aria-label="5 av 5 stjerner, 98 anmeldelser">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="review-count">(98)</span>
+        </div>
+        <h3 class="pcard-name">Velocity Wind</h3>
+        <p class="pcard-sub">Damejakke &#8212; Lett vindskall &#8212; Svart</p>
+        <div class="pcard-foot">
+          <span class="price">1 399 kr</span>
+        </div>
+      </div>
+    </a>
+  </article>
+</li>
+<li>
+  <article class="pcard">
+    <a href="product-detail.html" aria-label="Blaze Runner - 1 149 kr">
+      <div class="pcard-img-wrap">
+        <img src="images/jacket3.jpg" alt="Blaze Runner regnjakke" class="pcard-img" width="600" height="600" loading="lazy">
+        <span class="badge badge-orange">Salg</span>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-rating" aria-label="4 av 5 stjerner, 67 anmeldelser">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(67)</span>
+        </div>
+        <h3 class="pcard-name">Blaze Runner</h3>
+        <p class="pcard-sub">Herrejakke &#8212; Atletisk skall &#8212; R&#248;d/Svart</p>
+        <div class="pcard-foot">
+          <span class="price">1 149 kr</span><span class="price-old">1 599 kr</span>
+        </div>
+      </div>
+    </a>
+  </article>
+</li>
+<li>
+  <article class="pcard">
+    <a href="product-detail.html" aria-label="Storm Rider - 1 699 kr">
+      <div class="pcard-img-wrap">
+        <img src="images/jacket4.jpg" alt="Storm Rider regnjakke" class="pcard-img" width="600" height="600" loading="lazy">
+        <span class="badge badge-blue">Popul&#230;r</span>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-rating" aria-label="5 av 5 stjerner, 55 anmeldelser">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="review-count">(55)</span>
+        </div>
+        <h3 class="pcard-name">Storm Rider</h3>
+        <p class="pcard-sub">Herrejakke &#8212; Teknisk skall &#8212; Svart/Gul</p>
+        <div class="pcard-foot">
+          <span class="price">1 699 kr</span>
+        </div>
+      </div>
+    </a>
+  </article>
+</li>
+<li>
+  <article class="pcard">
+    <a href="product-detail.html" aria-label="Harbour Classic - 1 049 kr">
+      <div class="pcard-img-wrap">
+        <img src="images/jacket5.jpg" alt="Harbour Classic regnjakke" class="pcard-img" width="600" height="600" loading="lazy">
+        
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-rating" aria-label="4 av 5 stjerner, 73 anmeldelser">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(73)</span>
+        </div>
+        <h3 class="pcard-name">Harbour Classic</h3>
+        <p class="pcard-sub">Unisex &#8212; Casual skall &#8212; Grafitt</p>
+        <div class="pcard-foot">
+          <span class="price">1 049 kr</span>
+        </div>
+      </div>
+    </a>
+  </article>
+</li>
+<li>
+  <article class="pcard">
+    <a href="product-detail.html" aria-label="Expedition Pro - 2 299 kr">
+      <div class="pcard-img-wrap">
+        <img src="images/jacket6.jpg" alt="Expedition Pro regnjakke" class="pcard-img" width="600" height="600" loading="lazy">
+        <span class="badge badge-green">Gore-Tex</span>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-rating" aria-label="5 av 5 stjerner, 89 anmeldelser">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="review-count">(89)</span>
+        </div>
+        <h3 class="pcard-name">Expedition Pro</h3>
+        <p class="pcard-sub">Herrejakke &#8212; Gore-Tex Performance Shell</p>
+        <div class="pcard-foot">
+          <span class="price">2 299 kr</span>
+        </div>
+      </div>
+    </a>
+  </article>
+</li>
+<li>
+  <article class="pcard">
+    <a href="product-detail.html" aria-label="Summit Fleece - 849 kr">
+      <div class="pcard-img-wrap">
+        <img src="images/jacket7.jpg" alt="Summit Fleece regnjakke" class="pcard-img" width="600" height="600" loading="lazy">
+        <span class="badge badge-orange">Salg</span>
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-rating" aria-label="4 av 5 stjerner, 44 anmeldelser">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="review-count">(44)</span>
+        </div>
+        <h3 class="pcard-name">Summit Fleece</h3>
+        <p class="pcard-sub">Unisex &#8212; Fleece mellomlag &#8212; Oliven</p>
+        <div class="pcard-foot">
+          <span class="price">849 kr</span><span class="price-old">1 149 kr</span>
+        </div>
+      </div>
+    </a>
+  </article>
+</li></ul>
+    </div>
+  </section>
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="Rainy Days" class="footer-logo" width="140" height="40">
+      <p class="footer-tagline">&#171;Pushing the Comfort Zone&#187;</p>
+      <p class="footer-desc">Hoyytelsesjakker for eventyrere som nekter aa la vaeret vinne. Etablert 2014.</p>
+    </div>
+    <div class="footer-col">
+      <h3 class="footer-col-title">Handle</h3>
+      <ul role="list">
+        <li><a href="products.html" class="footer-link">Alle jakker</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Herre</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Dame</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Salg</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3 class="footer-col-title">Hjelp</h3>
+      <ul role="list">
+        <li><a href="coming-soon.html" class="footer-link">Stoorrelsesguide</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Levering</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Retur</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Garanti</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3 class="footer-col-title">Selskap</h3>
+      <ul role="list">
+        <li><a href="coming-soon.html" class="footer-link">Om oss</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Baerekraft</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Presse</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Karriere</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&#169; 2025 Rainy Days AS. Alle rettigheter forbeholdt.</span>
+    <span>Personvern &#183; Vilk&#229;r &#183; Informasjonskapsler</span>
+  </div>
+</footer>
+</body>
+</html>

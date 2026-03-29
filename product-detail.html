@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fyll inn leverings- og betalingsopplysninger for a fullfoere bestillingen din.">
+  <title>Kasse og betaling | Rainy Days</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="lang-bar" role="navigation" aria-label="Velg spraak">
+  <div class="lang-bar-inner">
+    <a href="index.html" class="lang-btn lang-btn-active" hreflang="no" aria-label="Norsk"><span aria-hidden="true">&#127475;&#127476;</span> Norsk</a>
+    <a href="coming-soon.html" class="lang-btn" hreflang="en" aria-label="English"><span aria-hidden="true">&#127468;&#127463;</span> English</a>
+  </div>
+</div>
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Rainy Days - til forsiden">
+      <img src="images/logo.png" alt="Rainy Days" width="160" height="46">
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Aapne navigasjon">
+      <span></span><span></span><span></span>
+    </label>
+    <nav id="main-nav" aria-label="Hovedmeny">
+      <ul class="nav-list" role="list">
+        <li><a href="index.html" class="nav-link">Hjem</a></li>
+<li><a href="products.html" class="nav-link">Jakker</a></li>
+<li><a href="coming-soon.html" class="nav-link">Herre</a></li>
+<li><a href="coming-soon.html" class="nav-link">Dame</a></li>
+<li><a href="coming-soon.html" class="nav-link">Salg</a></li>
+
+      </ul>
+    </nav>
+    <a href="cart.html" class="cart-btn" aria-label="Handlekurv">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <span class="cart-btn-text">Handlekurv</span>
+    </a>
+  </div>
+</header>
+<main id="main-content">
+  <div class="container">
+    <div class="pay-layout">
+      <div class="pay-form-col">
+        <h1>Kasse</h1>
+        <nav class="step-bar" aria-label="Betalingssteg">
+          <div class="step"><span class="step-num step-done" aria-label="Steg 1 fullfort">&#10003;</span><span class="step-lbl">Handlekurv</span></div>
+          <span class="step-line" aria-hidden="true"></span>
+          <div class="step"><span class="step-num step-active" aria-current="step">2</span><span class="step-lbl step-lbl-active">Betaling</span></div>
+          <span class="step-line" aria-hidden="true"></span>
+          <div class="step"><span class="step-num step-todo">3</span><span class="step-lbl">Bekreftelse</span></div>
+        </nav>
+        <form action="confirmation.html" method="get" novalidate>
+          <fieldset class="form-section">
+            <legend class="form-legend">&#128230; Leveringsinformasjon</legend>
+            <div class="form-row-2">
+              <div class="fg"><label for="fn">Fornavn</label><input type="text" id="fn" name="fn" autocomplete="given-name" value="Sara" required></div>
+              <div class="fg"><label for="ln">Etternavn</label><input type="text" id="ln" name="ln" autocomplete="family-name" value="Johansen" required></div>
+            </div>
+            <div class="fg"><label for="em">E-postadresse</label><input type="email" id="em" name="em" autocomplete="email" value="sara.johansen@epost.no" required></div>
+            <div class="fg"><label for="ph">Telefon</label><input type="tel" id="ph" name="ph" autocomplete="tel" value="+47 400 00 000"></div>
+            <div class="fg"><label for="ad">Adresse</label><input type="text" id="ad" name="ad" autocomplete="street-address" value="Fjellveien 14" required></div>
+            <div class="form-row-2">
+              <div class="fg"><label for="ci">By</label><input type="text" id="ci" name="ci" autocomplete="address-level2" value="Oslo" required></div>
+              <div class="fg"><label for="pc">Postnummer</label><input type="text" id="pc" name="pc" autocomplete="postal-code" value="0350" required></div>
+            </div>
+            <div class="fg"><label for="co">Land</label>
+              <select id="co" name="co" autocomplete="country-name">
+                <option value="NO" selected>Norge</option>
+                <option value="SE">Sverige</option>
+                <option value="DK">Danmark</option>
+                <option value="GB">Storbritannia</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="form-section">
+            <legend class="form-legend">&#128179; Betalingsdetaljer</legend>
+            <div class="card-icons" aria-label="Godkjente betalingskort">
+              <span class="card-icon">VISA</span><span class="card-icon">MC</span><span class="card-icon">AMEX</span><span class="card-icon">VIPPS</span>
+            </div>
+            <div class="fg"><label for="ch">Kortinnehaver</label><input type="text" id="ch" name="ch" autocomplete="cc-name" value="Sara Johansen" required></div>
+            <div class="fg"><label for="cn">Kortnummer</label><input type="text" id="cn" name="cn" autocomplete="cc-number" value="4539 1488 0343 6467" maxlength="19" required></div>
+            <div class="form-row-3">
+              <div class="fg fg-span2"><label for="ex">Utlopsdato</label><input type="text" id="ex" name="ex" autocomplete="cc-exp" value="09 / 27" required></div>
+              <div class="fg"><label for="cv">CVV</label><input type="text" id="cv" name="cv" autocomplete="cc-csc" value="342" maxlength="4" required></div>
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-green" style="width:100%;padding:1.0625rem;font-size:1rem;">&#128274; Bekreft bestilling &#8212; 2 499 kr</button>
+        </form>
+      </div>
+      <aside class="mini-summary" aria-labelledby="mini-sum-h">
+        <h2 class="order-sum-h" id="mini-sum-h">Ordresammendrag</h2>
+        <div class="mini-item">
+          <div class="mini-thumb"><img src="images/jacket1.jpg" alt="Coastal Guardian" width="68" height="68" loading="lazy"></div>
+          <div><p class="mini-name">Coastal Guardian</p><p class="mini-det">Oransje/Gr&#229; &#183; Str. M &#183; Antall: 1</p></div>
+        </div>
+        <div class="sum-row"><span>Delsum</span><span>1 999 kr</span></div>
+        <div class="sum-row"><span>Frakt</span><span class="free-label">Gratis</span></div>
+        <div class="sum-row"><span>MVA (25 %)</span><span>500 kr</span></div>
+        <div class="sum-row sum-row-total"><span>Totalt</span><span>2 499 kr</span></div>
+        <p class="secure-note" style="margin-top:1rem;line-height:1.9;">&#128274; 256-bit SSL-kryptering<br>&#128230; Levering: 2&#8211;4 virkedager<br>&#128260; 60-dagers retur</p>
+      </aside>
+    </div>
+  </div>
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="Rainy Days" class="footer-logo" width="140" height="40">
+      <p class="footer-tagline">&#171;Pushing the Comfort Zone&#187;</p>
+      <p class="footer-desc">Hoyytelsesjakker for eventyrere som nekter aa la vaeret vinne. Etablert 2014.</p>
+    </div>
+    <div class="footer-col">
+      <h3 class="footer-col-title">Handle</h3>
+      <ul role="list">
+        <li><a href="products.html" class="footer-link">Alle jakker</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Herre</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Dame</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Salg</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3 class="footer-col-title">Hjelp</h3>
+      <ul role="list">
+        <li><a href="coming-soon.html" class="footer-link">Stoorrelsesguide</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Levering</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Retur</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Garanti</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3 class="footer-col-title">Selskap</h3>
+      <ul role="list">
+        <li><a href="coming-soon.html" class="footer-link">Om oss</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Baerekraft</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Presse</a></li>
+        <li><a href="coming-soon.html" class="footer-link">Karriere</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&#169; 2025 Rainy Days AS. Alle rettigheter forbeholdt.</span>
+    <span>Personvern &#183; Vilk&#229;r &#183; Informasjonskapsler</span>
+  </div>
+</footer>
+</body>
+</html>
